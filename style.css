@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.left, .right, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+}
+
+.left h1 {
+    font-family: "facebook letter faces";
+    font-size: 60px;
+    color: #1877f2;
+}
+
+.left p {
+    font-size: 24px;
+    color: #1c1e21;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px;
+}
+
+.right {
+    width: 40%;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 16px;
+}
+form input:focus {
+    border: 2px solid #1877f2;
+    box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.loginBtn {
+    background-color: #1877f2;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.loginBtn:hover {
+    background-color: #4257b2;
+}
+
+.forget {
+    margin: 15px 0;
+    text-decoration: none;
+    color: #1877f2;
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+.sign-up {
+    padding-top: 20px;
+    border-top: 1px solid #999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signupBtn {
+    background-color: #42b72a;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Arial';
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.signupBtn:hover {
+    background-color: green;
+}
+
+.right p {
+    font-family: 'Arial';
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .left, .right {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .left h1 {
+        font-size: 50px;
+    }
+
+    .left p {
+        font-size: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .left h1 {
+        font-size: 40px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left h1 {
+        font-size: 35px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .loginBtn, .signupBtn {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
